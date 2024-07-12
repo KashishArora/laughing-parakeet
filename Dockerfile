@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
+RUN apt install python3-pyyaml
 
 COPY feed.py /usr/bin/feed.py
 
