@@ -1,0 +1,20 @@
+name: "Podcast Generator kash"
+author: "Kashish"
+description: "github actions testing"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding: 
+  icon: "git-branch"
+  color: "blue"
+inputs:
+  email:
+    description: "The commiters email"
+    required: true
+    default: ${{ github.actor }}@localhost
+  name:
+    description: "The Commiters name"
+    required: true
+    default: ${{ github.actior }}@localhost
+
+
